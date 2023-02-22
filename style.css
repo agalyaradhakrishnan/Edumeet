@@ -1,0 +1,453 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #8d8d8d ;
+    --title-color: #e3e0e0;
+    --list-color: #000000;
+    --white-color:#ffffff;
+     --green-color: #45fa54;
+     --yellow-color:#f89d15;
+     --success-color: #3eeb3e;
+     --error-color: #f5371e;
+     --orange-color: #f0610e;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,span{
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 60px;
+}
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 10vh;
+    background: var(--background-color) ;
+     opacity: 0.6;
+    z-index: 1;
+}
+nav span{
+    color: var(--title-color);
+    font-size: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+    
+}
+nav ul li a {
+    color: var(--list-color);
+    padding: 15px 10px;
+    text-decoration: none;
+}
+.menu{
+    display: none;
+    float: right;
+   
+} 
+/*********************************************8home***********************/
+.overlay{
+    position: relative;
+    background:var(--list-color) ;
+    opacity: 0.6;
+    height: 140vh;
+    width: 100%;
+}
+.overlay video{
+    width: 100%;
+    object-fit: cover;
+}
+.hlo{
+    background-color: var(--list-color);
+}
+.home-con{
+    position: absolute;
+    top:30%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    
+}
+.home-card{
+    position: absolute;
+    top:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-card .card{
+    width: 22rem;
+    height: 40vh;
+    margin-left: 9%;
+    margin-top: -5%;
+}
+/*********************************************meeting***********************/
+#meeting{
+    background-image: url('img/meetings-page-bg.jpg');
+}
+.meet-card .card{
+    width:18rem ;
+    height:65vh ;
+} 
+.meet-card .card-1{
+border-radius: 20px;
+}
+/**********caro*************************/
+.slider{
+    position: relative;
+  }
+.slider img{
+  width: 100%;
+  height: 90vh;
+}
+  .slider-item,
+  .hidden
+  {
+  display: none;
+  }
+  
+  .active{
+    display: block;
+    animation: fadeAnimation 0.5s;
+  }
+  .slider-btns{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+  }
+  .slider-btns button{
+    font-size: 30px;
+    font-weight: 400;
+    background-color:var(--list-color);
+    opacity: 0.5;
+    border:none;
+    color:var(--white-color);
+    cursor: pointer;
+    
+  }
+  /**********Applynow*************************/
+.apply{
+    background-image: url('img/apply-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit:cover ;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0,.6);
+    height: 150vh;
+    width: 100%;
+}
+#apply .overlay-1{
+    background-color: rgb(0, 0, 0,.6);
+    width: 100%;
+}
+  /**********pages*************************/
+#pages{
+    background-image: url('img/facts-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(8, 8, 8,.6);
+}
+.stu{
+    background-color: rgb(255, 255, 255,.6);
+    border-radius: 30px;
+    width: 25%;
+    height: 25vh;
+}
+.stu2{
+    background-color: rgb(255, 255, 255,.6);
+    border-radius: 30px;
+    width: 25%;
+    height: 25vh;
+}
+/*******video***********/
+video{
+    min-height: 80vh;
+    object-fit: cover;
+  
+}
+#btn i{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;  
+    color: white;
+}
+#pages button{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--green-color);
+    opacity: .6;
+    border-radius: 50%;
+    padding: 20px 20px;
+}
+/****************form**********************************/
+.contain{
+    flex: 1  1 5rem;
+    overflow:hidden;
+    min-width: 40%;
+    min-height: 60vh;
+    background-color:var(--yellow-color);
+    border-radius: 20px;
+    border: 5px solid var(--list-color);
+    object-fit: cover;
+    
+}
+.log{
+    background-color: var(--white-color);
+    padding: 20px 40px;
+    width:100%;
+    border: 2px solid var(--list-color);
+    text-align: center;
+    
+}
+
+
+.form{
+   padding: 30px 40px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+.form-control label, .form-1 label, .form-control select {
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+.form-control input, .form-control select {
+    border-radius: 5px;
+    border: 2px solid var(--list-color);
+    display: flex;
+    font-size: 20px;
+    padding: 10px ;
+    width: 100%;
+}
+.form-control input:focus, .form-control select:focus{
+   
+    border:rgb(250, 250, 253);
+}
+.check label{
+    display: block;
+    padding: 10px 0;
+}
+.check{
+    margin-bottom: 10px;
+}
+
+
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right:60px;
+}
+
+.form-control.success i.fa-check{
+    color: var(--success-color);
+    visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: var(--error-color);
+    visibility: visible;
+}
+.form-control small , .form small{
+    color:var(--error-color) ;
+    position: absolute;
+    left:0;
+    visibility: hidden;
+}
+.form-control.error small{
+visibility: visible;
+}
+
+.form button{
+    margin-left:3%;
+    width: fit-content;
+    padding: 5px 5px;
+}
+/******************************contact**************************************/
+#contact{
+    background-image: url('img/meetings-bg.jpg');
+    object-fit: cover;
+    background-size: cover;
+}
+@media (max-width:768px) {
+    nav ul {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        background-color: var(--orange-color);
+        padding: 0;
+        top: 62px;
+        left: -100%;
+    }
+    nav span{
+        font-size: 20px;
+    }
+    nav ul.slide {
+        left: 0;
+        transition: 2s;
+        width: 50%;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    nav ul li:hover {
+        background-color:var(--list-color);
+    }
+
+    nav ul li a {
+        border: none;
+        color: aliceblue;
+    }
+    
+    .menu {
+       padding: 10px 10px;
+        display: block;
+        color: black;
+        font-size: 20px;
+        margin-top: 5px;
+    } 
+    .topbar{
+        display: none;
+    }
+    /***********************home*************************************************/
+    .overlay{
+        position: relative;
+        background: var(--list-color);
+        opacity: 0.6;
+        height: 180vh;
+        width: 100%;
+    }
+    .overlay video{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home-con{
+        position: absolute;
+        top:35%;
+        left:40%;
+        transform: translate(-50%,-50%);
+        display: none;   
+ }
+ .home-card{
+    position: absolute;
+    top:40%;
+    display: block;
+}
+.home-card .card{
+    width: 15rem;
+    height: 35vh;
+    margin-left:15%;
+    display: block;
+    font-size: 10px;
+
+}
+.meet-card .card{
+    width:21rem ;
+    height:65vh ;
+}
+
+/*********pages and video*********/
+#pages{
+    background-image: url('img/facts-bg.jpg' );
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 230vh;
+    background-color: rgb(8, 8, 8,.6);
+}
+video{
+width: 100%;
+}
+/************************form****************************************************/
+.co{
+    margin-top: 5%;
+    width: 100%;
+   margin-left: 0;
+}
+.form button{
+    margin-left:3%;
+    width: fit-content;
+    width: 65%;
+
+}
+/************************apply****************************************************/
+
+.apply{
+    background-image: url('img/apply-bg.jpg');
+    object-fit:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0,.6);
+    height: 220vh;
+   
+}
+}
+@media (max-width:480px) {
+    .meet-card .card{
+        width:12rem ;
+        height:65vh ;
+    }
+    .meet-card .card-1{
+        border-radius: 20px;
+        width:12rem ;
+
+    }
+    .home-card .card{
+        width: 13rem;
+        height: 30vh;
+        margin-left:-1%;
+        display: block;
+        font-size: 10px;
+    
+    }
+    .apply{
+        background-image: url('img/apply-bg.jpg');
+        background-position: center;
+        background-size: cover;
+        object-fit:cover ;
+        background-repeat: no-repeat;
+        background-color: rgb(0, 0, 0,.6);
+        height: 300vh;
+        width: 100%;
+    }
+   
+}
